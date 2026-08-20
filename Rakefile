@@ -6,14 +6,9 @@ task :test do
 end
 
 namespace :build do
-  desc "Build JavaScript"
-  task :coffee do
-    sh "coffee --compile --bare *.coffee"
-  end
-
   desc "Update man pages"
   task :man do
-    uri = URI("https://raw.github.com")
+    uri = URI("https://raw.githubusercontent.com")
     Net::HTTP.start(uri.host, uri.port, :use_ssl => true) do |http|
       [1, 5].each do |page|
         resp = http.get("/mustache/mustache/master/man/mustache.#{page}.html")
@@ -39,4 +34,4 @@ namespace :build do
 end
 
 desc "Build the whole site"
-task :build => [ "build:coffee", "build:man" ]
+task :build => [ "build:man" ]

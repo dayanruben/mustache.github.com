@@ -84,7 +84,7 @@
 - name: Common Lisp
   url: https://github.com/kanru/cl-mustache/
 - name: Nim
-  url: https://github.com/fenekku/moustachu
+  url: https://github.com/soasme/nim-mustache
 - name: Pharo
   url: https://github.com/noha/mustache
 - name: Tcl
@@ -94,13 +94,21 @@
 - name: ABAP
   url: https://github.com/sbcgua/abap_mustache
 - name: Elm
-  url: https://github.com/truqu/elm-mustache
+  url: https://github.com/emmabastas/elm-mustache
 - name: Kotlin
   url: https://github.com/cashapp/barber
 - name: SQL
   url: https://github.com/microtangents/sql-mustache
 - name: Solidity
   url: https://github.com/nftgp/solid-mustache
+- name: PowerShell
+  url: https://github.com/splumhoff/PSMustache
+- name: Odin
+  url: https://github.com/benjamindblock/odin-mustache
+- name: Arduino
+  url: https://github.com/floatplane/ministache
+- name: MATLAB
+  url: https://github.com/dbuzinski/matstache
 
 # TODO: include handlebars implementations?
 # - name: Java
